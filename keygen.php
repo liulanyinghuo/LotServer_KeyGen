@@ -35,7 +35,7 @@ $key = 'apx-section1';
 switch ($version) {
     case 0:
         $lic_len = 0x98;
-        $lic_path = '.template_old.lic';
+        $lic_path = 'template_old.lic';
         function Decrypt($Key, $KeyLen, $CipherText, $CipherTextLen, &$OutPlainText)
         {
             APX_ProtDecrypt($Key, $KeyLen, $Key, $KeyLen, $CipherText, $CipherTextLen, $OutPlainText);
@@ -49,7 +49,7 @@ switch ($version) {
         break;
     case 1:
         $lic_len = 0xA0;
-        $lic_path = '.template_3.11.20.10.lic';
+        $lic_path = 'template_3.11.20.10.lic';
         function Decrypt($Key, $KeyLen, $CipherText, $CipherTextLen, &$OutPlainText)
         {
             APX_ProtDecrypt_New($Key, $KeyLen, $Key, $KeyLen, $CipherText, $CipherTextLen, $OutPlainText);
